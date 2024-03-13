@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html className={`${myFont.variable}`} lang="en">
+    <html className={myFont.variable} lang="en">
       <body className="container m-auto grid min-h-screen grid-rows-[auto,1fr,auto] overflow-y-scroll bg-background px-4 font-sans antialiased">
         <header className="nes-text text-xl font-bold leading-[4rem]">
           <Link href="/">Pokesearch</Link>
