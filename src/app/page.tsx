@@ -1,3 +1,5 @@
+import {Suspense} from "react";
+
 import SearchBar from "../components/SearchBar";
 import {PokemonsGrid} from "../components/PokemonsGrid";
 
@@ -8,7 +10,9 @@ interface HomePageProps {
 export default function HomePage({searchParams}: HomePageProps) {
   return (
     <>
-      <SearchBar />
+      <Suspense>
+        <SearchBar />
+      </Suspense>
       <PokemonsGrid searchParams={searchParams} />
     </>
   );
